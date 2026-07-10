@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:pom": "playwright test tests/pom_auth_navigation.spec.js tests/pom_file_upload.spec.js --project=chromium",
+    "test:sauce": "playwright test --config=sauceDemo/playwright.config.js --project=chromium",
+    "test:headed": "playwright test --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
